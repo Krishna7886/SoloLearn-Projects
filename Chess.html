@@ -51,7 +51,7 @@
   </style>
  </head> 
  <body> 
-  <h1>Chess Game by Krishna</h1>
+  <h1>Chess Game by <span id="top">Krishna</span></h1>
   <div class="chessboard">
   <!-- 1st --> 
    <div class="white">&#9820;</div>
@@ -125,6 +125,15 @@
    <div class="white">&#9815;</div> 
    <div class="black">&#9816;</div> 
    <div class="white">&#9814;</div> 
+   <p>Enter your name</p> <input id="val"/><br/>
+  <button onclick="func()">Submit</button>
+   <script>
+    function func(){
+    var a = document.getElementById("val");
+    var b = document.getElementById("top");
+    b.innerHTML = a.value;
+   }
+   </script>
   </div> 
  </body> 
 </html>
