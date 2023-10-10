@@ -1,1 +1,2 @@
-pyscript.write("py","Krishna")
+a = input("Enter your name: ")
+pyscript.write("py",a)
