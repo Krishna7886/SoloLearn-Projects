@@ -1,1 +1,1 @@
-print("Krishna")
+pyscript.write("py","Krishna")
