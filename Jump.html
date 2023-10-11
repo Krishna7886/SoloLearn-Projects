@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+       <canvas id="demo" height="500px" width="500px"></canvas>
+       <script>
+           window.onload=function()
+{
+     var a=document.getElementById("demo");
+     var b=a.getContext("2d");
+     var angle = 0;
+     var dir=2;
+     var x1=0.5;
+     var y1=1.5;
+     var x2=0;
+     var y2=1;
+  function convertToRadians(degree)
+    { 
+      return degree*(Math.PI/90);
+    } 
+  function incrementAngle() 
+    { 
+       angle+=dir; 
+     if(angle >=90||angle<=0) 
+       {
+       /*angle = 0; */
+         dir*=-1;
+       }
+   } 
+  function draw()
+    { 
+       b.clearRect(0,0,1280,720);  
+       incrementAngle();
+       b.save();    
+       b.translate(200,200);
+       b.rotate(convertToRadians(angle));
+       b.beginPath();
+       b.moveTo(0,50);
+        /*b.arc(0,50,50,x1*Math.PI,y1*Math.PI);
+       b.lineTo(0,50);
+       b.fillStyle="#ea4335"//red;
+       b.fill();*/
+                
+    /*   b.beginPath();
+       b.moveTo(50,0);       b.arc(50,0,50,x2*Math.PI,y2*Math.PI);
+       b.lineTo(50,0);
+       b.fillStyle="#fbbc05"//yellow;
+       b.fill();*/
+    
+    /*   b.beginPath();
+       b.moveTo(0,-50);   
+       b.arc(0,-50,50,x1*Math.PI,y1*Math.PI,true);
+       b.lineTo(0,-50);
+       b.fillStyle="#34a853" //green;
+       b.fill();*/
+                
+       b.beginPath();
+       b.moveTo (-50,0);
+        b.arc(-50,0,50,x2*Math.PI,y2*Math.PI,true);
+       b.lineTo(-50,0);
+       b.fillStyle="#4285f4";
+       b.fill();
+        x1-=0.03;
+          y1-=0.03;
+          x2-=0.03;
+          y2-=0.03;       
+         
+       b.restore();
+       b.beginPath ();
+       b.moveTo(50,250) ;
+       b.lineTo(350,250);
+       b.lineWidth="5"
+       b.stroke();
+       
+       b.beginPath ();
+       b.moveTo(103,170) ;
+       b.lineTo(104,170);
+       b.lineCap="round";
+       b.lineWidth="5"
+       b.stroke();
+       
+       
+       b.beginPath ();
+       b.moveTo(50,219) ;
+       b.lineTo(105,219);
+       b.lineWidth="5"
+       b.stroke();
+       
+        
+       b.beginPath ();
+       b.moveTo(350,230) ;
+       b.lineTo(290,230);
+       b.lineWidth="5"
+       b.stroke();
+       
+        
+       b.beginPath ();
+       
+      
+       b.moveTo(350,215) ;
+       b.lineTo(300,215);
+       b.lineWidth="5"
+       b.stroke();
+       
+       b.beginPath();
+       b.font='50px asrf';
+       b.fillStyle="black";
+       b.fillText("Google Photos",45,350);
+             window.requestAnimationFrame(draw);
+    }
+        draw();            
+}
+       </script>
+    </body>
+</html>
