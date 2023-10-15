@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <a href="http:/www.google.com">
+     <canvas id="demo" height="450px" width="400px"></canvas>
+     </a>
+     <script>
+         window.onload=function()
+{
+    var a=document.getElementById("demo");
+    var b=a.getContext("2d");
+    x=1.15;
+    y=1.7;
+    x1=-0.15;
+    y1=1.72
+     color="#ea4335";
+     color1="white";
+    
+   /*     b.beginPath ();
+        b.moveTo(60,120)
+        b.lineTo(310,320);
+        b.stroke();
+        b.beginPath ();
+        b.moveTo(60,290)
+        b.lineTo(270,100);
+        b.stroke();*/
+        
+        
+   /*     b.beginPath ();
+        b.arc(200,200,10,0*Math.PI,2*Math.PI);
+        b.fill();
+        */
+        function draw()
+        {
+        b.clearRect(0,0,500,500);
+        b.beginPath();
+        b.arc(200,200,100,0.9*Math.PI,1.2*Math.PI);
+        
+        b.lineWidth="50";
+        b.strokeStyle="#fbbc05";
+        b.stroke();
+        
+        b.beginPath ();
+        b.arc(200,200,125,1.3*Math.PI,1.15*Math.PI,true);
+         b.arc(200,200,75,1.11*Math.PI,1.3*Math.PI);
+        b.lineWidth="1";
+        b.fillStyle="#ea4335";
+        b.fill();
+    /*   b.strokeStyle="black"
+        b.stroke();*/
+        
+        b.beginPath ();
+        b.arc(200,200,125,1*Math.PI,0.8*Math.PI,true);
+         b.arc(200,200,75,0.86*Math.PI,1*Math.PI);
+        b.lineWidth="1";
+        b.fillStyle="#fbbc05";//yellow
+        b.fill();
+    /*    b.strokeStyle="black"
+        b.stroke();*/
+        b.beginPath ();
+        b.arc(200,200,100,-0.06*Math.PI,0.5*Math.PI);
+        b.lineWidth="50";
+        b.strokeStyle="#4285f4";
+        b.stroke ();
+    
+        
+       b.beginPath ();
+        b.arc(200,200,125,0.835*Math.PI,0.28*Math.PI,true);
+         b.arc(200,200,75,0.32*Math.PI,0.88*Math.PI);
+        b.lineWidth="1";
+        b.fillStyle="#34a853";//green
+        b.fill();
+    /*    b.strokeStyle="black"
+        b.stroke();*/
+        
+        b.beginPath ();
+        b.rect(200,175,122,50);
+         b.fillStyle="#4285f4";
+        b.fill();
+        b.stroke();
+        
+        b.beginPath();
+        b.arc(200,200,100,x*Math.PI,y*Math.PI);
+        
+        b.lineWidth="50";
+   //     b.strokeStyle="#ea4335";//red
+        b.strokeStyle=color;
+        b.stroke(); 
+        //    b.lineCap="none"   
 
+            b.beginPath();
+        b.rect(265,125,60,51);
+        b.fillStyle="white";
+  
+ 
+   
+        b.beginPath();
+        b.arc(200,200,100,x1*Math.PI,y1*Math.PI);
+        
+        b.lineWidth="52";
+   //     b.strokeStyle="#ea4335";//red
+        b.strokeStyle="white";
+        b.stroke(); 
+               
+
+            b.beginPath();
+        b.rect(265,123,60,51);
+        b.fillStyle="white";
+        b.fill();
+     //   b.lineCap="round"
+        x1+=0.03;
+     /*   if(x>=0.5)
+        {
+            color="#4285f4";
+        }*/
+    /*    if(x>=0.9)
+        {
+            color="#fbbc05";
+        }*/
+        if(x1>=1.72)
+        {
+            x1=1.72;
+                   
+        }
+ 
+        
+        b.font="50px asrif";
+        b.fillStyle="black";
+        b.fillText("Google",120,400);
+        window.requestAnimationFrame(draw);
+        }
+        draw();
+        
+}
+     </script>
+    </body>
+</html>
