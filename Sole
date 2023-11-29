@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <canvas id="demo" height="500px" width="500px" style="background-color:black"></canvas>
+    </body>
+</html>
