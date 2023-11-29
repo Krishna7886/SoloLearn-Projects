@@ -5,5 +5,59 @@
     </head>
     <body>
         <canvas id="demo" height="500px" width="500px" style="background-color:black"></canvas>
+    <script>
+       window.onload=function(){
+    var a = document.getElementById("demo");
+    var b = a.getContext("2d");
+    b.beginPath()
+    b.moveTo(20,300)
+    b.lineTo(40,300)
+    b.lineTo(45,290)
+    b.lineTo(50,310)
+    b.lineTo(62,265)
+    b.lineTo(70,340)
+    b.lineTo(75,300)
+    b.lineTo(110,300)
+    b.lineWidth=3
+    b.strokeStyle="yellow"
+    b.stroke()
+    b.closePath();
+    
+    b.beginPath();
+    b.arc(140,300,30,-0.4*Math.PI,1*Math.PI)  
+    b.lineWidth=3
+    b.stroke()    
+    b.closePath()
+    
+    b.beginPath();    
+    b.arc(161,243,30,0.6*Math.PI,1.9*Math.PI)    
+    b.lineWidth=3
+    b.stroke()    
+    b.closePath()
+    
+    b.beginPath();    
+    b.arc(210,250,25,1.2*Math.PI,2.3*Math.PI) 
+    b.lineTo(175,300)  
+    b.lineTo(260,300) 
+    b.lineWidth=3
+    b.stroke()    
+    b.closePath()
+    
+    
+    b.beginPath()
+    b.moveTo(240,300)
+    b.lineTo(260,300)
+    b.lineTo(265,290)
+    b.lineTo(270,310)
+    b.lineTo(282,265)
+    b.lineTo(290,340)
+    b.lineTo(295,300)
+    b.lineTo(330,300)
+    b.lineWidth=3
+    b.strokeStyle="yellow"
+    b.stroke()
+    b.closePath();
+}
+    </script>
     </body>
 </html>
