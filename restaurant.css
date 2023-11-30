@@ -1,0 +1,315 @@
+/* Created by Krishna */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image:url("https://i.imgur.com/WPc5R1m.png");
+    background-repeat: repeat;
+    background-size: 750px;
+    backdrop-filter: blur(1px);
+    font-family: "Poppins", sans-serif;
+}
+
+.menu {
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 30px 40px;
+}
+
+.food-items {
+    background-color: white;
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.food-items img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.details {
+    flex: 1; 
+    padding: 20px 10px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    background-color: #8B202D;
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-right: -10px;
+    margin-left: -10px;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 0 15px rgba(0,0,0, .5);
+}
+
+.heading h1 {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.heading h3 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.details-sub {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details-sub h5 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom:10px;
+}
+
+.price {
+    text-align: right;
+}
+
+.details p {
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+    margin-bottom:10px;
+    
+}
+
+.details button {
+    background-color: #6A4E39;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  background: linear-gradient(90deg, rgb(230,230,230)0%, rgb(250,250,250) 50%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: 900;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position:  absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 140px;
+  box-shadow: inset 0 0 2000px rgba(0, 0, 0, .5);
+  height: 1000px;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -75px;
+  padding-left: 10px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  background-color:white;
+  z-index:300;
+}
+
+.navbar .menu-items li {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor:none;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 1.2rem;
+  color: black;
+  z-index:20;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.logo h1 {
+    letter-spacing:15px;
+    font-weight:500;
+    margin-top: 8px;
+    margin-left:-10px;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.add-to-cart-button {
+    background-color: #6A4E39;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.continuation, .continuation_2 {
+    text-decoration:none;
+    font-size:20px;
+    color: blue;
+}
+
+.continuation:focus:after {
+    content: ' In Armenia, it is also called “ttu lavash”, which means “sour lavash”, as it is made from plums, cherries or dogwood. A sweeter option is pita bread made from apple, peach or apricot.';
+    font-size: 15px;
+    color: #6f6f6f;
+    margin-left:-9px;
+}
+
+.continuation:focus, .continuation_2:focus {
+    color: white;
+}
+
+.continuation_2:focus:after {
+    content: 'Because they took her with them to Arab troops invaded Armenia when they invaded the borders of this country in the VI century. The conquerors left behind a kind of pizza with lamb, which is eaten with lemon. This dish is not served on special occasions and on holidays, but it is just right for satisfying hunger.';
+    font-size: 15px;
+    color: #6f6f6f;
+    margin-left:-9px;
+}
+
+.drinks {
+    border: 2px solid black;
+    border-radius:50px;
+    background-color:white;
+    box-shadow: 0 0 2000px rgba;
+}
+
+.login-button{
+   background-color: transparent;
+   border: 1.5px solid #f2f5f7;
+   border-radius: 2em;
+   padding: 0.6rem 0.8rem;
+   margin-left: 2vw;
+   font-size: 1rem;
+   cursor: pointer;
+   transition:.8s;
+}
+
+.login-button:hover {
+    background-color:black;
+    color:white;
+}
