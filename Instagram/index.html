@@ -26,12 +26,15 @@
         }
         #video_call{
             color:white;
-            margin: 0px 580px;
+            margin: 0px -50px;
+            
         }
         #edit{
             color:white;
-            margin: 0px 640px;
+            margin: 0px 20px;
+         
         }
+        #flt{float: right;}
         #img{
             background-color: red;
             height:40px;
@@ -112,10 +115,13 @@
         <dl>
             <dt id="back" onclick="back()"><--</dt>
             <dt id="iD">krishna_30m ⌄</dt>
-            <dt id="video_call" onclick="video_call()"><img id="img" src="video.png" alt="video"/></dt>
-            <dt id="edit" onclick="edit()"><img id="edit_img" src="edit.jpeg" alt="video"/></dt>
+            <div id="flt">
+            <dt id="video_call" onclick="video_call()"><img id="img" src="Downloads/video.png" alt="video"/></dt>
+            <dt id="edit" onclick="edit()"><img id="edit_img" src="Downloads/edit.jpeg" alt="video"/></dt>
+            </div>
         </dl>
     </div>
+    <br/><br/><br/>
     <div id="search" >
         <i class="fa fa-search" id="sIcn"></i>
         <input id="in" placeholder="Search" onclick="remove()"/>
@@ -123,7 +129,7 @@
     <div>
         <dt id="note1">
             <figure>
-                <img src="21852-01.jpeg" id="n1"/>
+                <img src="Downloads/21852-01.jpeg" id="n1"/>
                 <figcaption id="figcaption">
                     Your note
                 </figcaption>
@@ -136,7 +142,7 @@
         <dt id="requests" onclick="requests()">Requests</dt>
     </div>
     <div>
-        <dt><img src="n2.jpg" alt="RowdyPilla" id="rPilla"/></dt>
+        <dt><img src="Downloads/n2.jpg" alt="RowdyPilla" id="rPilla"/></dt>
         <dt id="name">rowdy pilla</dt>
     </div>
 </body>
