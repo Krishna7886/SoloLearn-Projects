@@ -1,7 +1,6 @@
 #board{
     text-align: center;
     vertical-align: middle;
-    /*display: table-cell;*/
     width:640px;
 }
 body{
