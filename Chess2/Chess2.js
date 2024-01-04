@@ -43,7 +43,6 @@ for(var i=0;i<8;i++){
     for(var j=0;j<8;j++){
         if(i%2 == 0 && j%2 == 0){
             box[i][j].style.backgroundColor="#ffffc0"
-            box[i][j].style.onhover
         }
         if(i%2 == 1 && j%2 == 1){
             box[i][j].style.backgroundColor="#ffffc0"
@@ -51,10 +50,45 @@ for(var i=0;i<8;i++){
         }
     }
 }
+let iv = 0,jv = 0;
 for(var i=0;i<8;i++){
     for(var j=0;j<8;j++){
-        box[i][j].style.onMouseClick = function(){
-            alert(box[i][j].innerHTML)
+       /* if(box[i][j].addEventListener('click',true)==true){
+            function a(){
+                alert(box[i][j].innerHTML)
+            }
+            a();
+           
+        }*/
+        var click = box[i][j].style.onclick = () => {
+            iv = i;
+            jv = j;
+            return i,j;
         }
+        
     }
 }
+let pic = "";
+document.querySelectorAll("#board").forEach(item =>{
+    item.querySelectorAll("#r1").forEach(r1 =>{
+        if(r1.id == "c1"){
+            alert(r1.innerText)
+        }
+    })
+    item.querySelectorAll("#r2").forEach(r2 =>{
+        r2.addEventListener('click',function(){
+            pic = r2.innerText
+            if(pic != ""){
+                alert(pic)
+            }
+        })
+    })
+    item.querySelectorAll("#r3").forEach(r3 =>{
+        r3.addEventListener('click',function(){
+            pic = r3.innerText
+            if(pic != ""){
+                alert(pic)
+            }
+        })
+    })
+})
