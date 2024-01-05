@@ -122,3 +122,11 @@ body{
     top: -155px;
     left: 640px;
 }
+#profile2{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top:-55px;
+    right: -30px;
+    position: relative;
+}
