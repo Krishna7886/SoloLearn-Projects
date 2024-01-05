@@ -120,7 +120,8 @@ body{
 #cam{
     position: relative;
     top: -155px;
-    left: 640px;
+    left: -30px;
+    float: right;
 }
 #profile2{
     height: 60px;
