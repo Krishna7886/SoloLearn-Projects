@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+}
+#iD,#back,#video_call,#edit{position: relative}
+#rPilla,#name,#msgSent,#add_notes{position: relative;}
+#iD{
+    text-align: 20px right;
+    color: white;
+    font-size: 30px;
+    padding: 0px;
+    margin:0px 100px;
+}
+#back{
+    text-align: left;    
+    color: white; 
+    font-size: 30px;
+    float: left;    
+}
+#video_call{
+    color:white;
+    margin: 0px -50px;
+    position: relative;
+    top:-40px;
+}
+#edit{
+    color:white;
+    margin: 0px 20px;
+    top:-80px;
+}
+#flt{float: right;}
+#img{
+    background-color: red;
+    height:40px;
+    border-radius: 50%;
+}
+#edit_img{
+    background-color: red;
+    height:40px;
+    border-radius: 50%;
+}
+#search{
+    background-color: #171717;
+    height: 40px;
+    border-radius: 15px;
+    margin:0px 20px;
+    position: relative;
+    top:-40px;
+}
+#in{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    margin: -5px 8px;
+    color: white;
+}
+#sIcn{
+    font-size: 20px;
+    color: rgba(0,0,0, .5);
+    margin: 10px 20px;
+}
+#n1{
+    height:100px;
+    border-radius: 50%;
+    margin: 30px -20px;
+    position: relative;
+    top:-50px;
+}
+#figcaption{
+    color: #8e8e8e;
+    position: relative;
+    font-size: 15px;
+    top:-70px;
+}
+#msg{
+    color: white;
+    top:-100px;
+    float: left;
+    position: relative;
+    right: -20px;
+}
+#requests{
+    color: blue;
+    float: right;
+    position: relative;
+    top: -100px;
+    right: 20px;
+}
+#add_notes{
+    color: #8e8e8e;
+    font-size: 23px;
+    position: relative;
+    background-color: #171717;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    top:-235px;
+    right: -15px;
+}
+#rPilla{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top:-55px;
+    right: 55px;
+    position: relative;
+}
+#name{
+    color: white;
+}
+#msgSent{
+    color: #8e8e8e;
+}
+#content1{
+    position: relative;
+    top: -105px;
+    right: -120px;
+}
+#cam{
+    position: relative;
+    top: -155px;
+    left: 640px;
+}
