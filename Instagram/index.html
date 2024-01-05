@@ -6,116 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body{
-            background-color: black;
-        }
-        #iD,#back,#video_call,#add_notes,#rPilla,#name,#msgSent{position: fixed;}
-        #iD{
-            text-align: 20px right;
-            color: white;
-            font-size: 30px;
-            padding: 0px;
-            margin:0px 100px;
-        }
-        #back{
-            text-align: left;    
-            color: white; 
-            font-size: 30px;
-            float: left;    
-        }
-        #video_call{
-            color:white;
-            margin: 0px -50px;
-            
-        }
-        #edit{
-            color:white;
-            margin: 0px 20px;
-         
-        }
-        #flt{float: right;}
-        #img{
-            background-color: red;
-            height:40px;
-            border-radius: 50%;
-        }
-        #edit_img{
-            background-color: red;
-            height:40px;
-            border-radius: 50%;
-        }
-        #search{
-            background-color: #171717;
-            height: 40px;
-            border-radius: 15px;
-            margin:0px 20px;
-            
-            
-        }
-        #in{
-            background-color: transparent;
-            border: 0;
-            outline: none;
-            margin: -5px 8px;
-            color: white;
-        }
-        #sIcn{
-            font-size: 20px;
-            color: rgba(0,0,0, .5);
-            margin: 10px 20px;
-        }
-        #n1{
-            height:100px;
-            border-radius: 50%;
-            margin: 30px -20px;
-        }
-        #figcaption{
-            color: white;
-            margin: -20px -5px;
-            font-size: 15px
-        }
-        #msg{
-            color: white;
-            margin:30px 10px;
-            float: left;
-        }
-        #requests{
-            color: blue;
-            float: right;
-            margin:40px 10px;
-        }
-        #add_notes{
-            color: white;
-            font-size: 23px;
-            margin: -150px 20px;
-            background-color: #171717;
-            height: 35px;
-            width: 35px;
-            border-radius: 50%;
-            text-align: center;
-            align-items: center;
-        }
-        #rPilla{
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            margin:80px -85px;
-            float: left;
-            position: fixed;
-        }
-        #name{
-            color: white;
-            text-align: center;
-            margin:90px 100px;
-        }
-        #msgSent{
-            color: #8e8e8e;
-            margin: 115px 100px;
-        }
-    </style>
+    <link href="no1.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <div>
     <div>    
         <dl>
             <dt id="back" onclick="back()"><--</dt>
@@ -147,38 +41,22 @@
         <dt id="requests" onclick="requests()">Requests</dt>
     </div>
     <div onclick="open1()">
-        <dt><img src="n2.jpg" alt="RowdyPilla" id="rPilla"/></dt>
-        <dt id="name">rowdy pilla</dt>
-        <dt id="msgSent">Send just now</dt>
+        <dt><img src="Downloads/n2.jpg" alt="RowdyPilla" id="rPilla"/></dt>
+        <div id="content1">
+            <dt id="name">rowdy pilla</dt>
+            <dt id="msgSent">Send just now</dt>
+        </div> 
+        <dt id="cam"><img src="downloadInsta.svg" style="height: 40px;"/></dt>
     </div>
+    <div onclick="open1()">
+        <dt><img src="n2.jpg" alt="RowdyPilla" id="rPilla"/></dt>
+        <div id="content1">
+            <dt id="name">rowdy pilla</dt>
+            <dt id="msgSent">Send just now</dt>
+        </div> 
+        <dt id="cam"><img src="downloadInsta.svg" style="height: 40px;"/></dt>
+    </div>
+</div>
 </body>
-    <script>
-        function back(){
-            alert("It's under construction");
-        }
-        function video_call(){
-            alert("It's under construction");
-        }
-        function edit(){
-            alert("It's under construction");
-        }
-        function remove(){
-            var main = document.getElementById("search")
-            var remove = document.getElementById("sIn");
-
-            var inv = document.getElementById("in");
-            if(inv != ""){
-                main.removeChild(remove);
-            }
-        }
-        function requests(){
-            alert("It's under Construction");
-        }
-        function add_notes(){
-            alert("It's under Construction");
-        }
-        function open1(){
-            alert("it's under Constriction")
-        }
-    </script>
+    <script src="no1.js"></script>
 </html>
