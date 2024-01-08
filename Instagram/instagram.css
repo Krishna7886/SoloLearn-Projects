@@ -28,11 +28,9 @@ body{
 #flt{float: right;}
 #img{
     height:40px;
-    border-radius: 50%;
 }
 #edit_img{
     height:40px;
-    border-radius: 50%;
 }
 #search{
     background-color: #171717;
