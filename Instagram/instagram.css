@@ -17,24 +17,20 @@ body{
     float: left;    
 }
 #video_call{
-    color:white;
     margin: 0px -50px;
     position: relative;
     top:-40px;
 }
 #edit{
-    color:white;
     margin: 0px 20px;
     top:-80px;
 }
 #flt{float: right;}
 #img{
-    background-color: red;
     height:40px;
     border-radius: 50%;
 }
 #edit_img{
-    background-color: red;
     height:40px;
     border-radius: 50%;
 }
