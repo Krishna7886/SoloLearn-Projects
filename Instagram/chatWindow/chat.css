@@ -28,14 +28,14 @@ body{
             display: grid;
             top: -20px;
         }
-        #call_img{
+        #audioCall_logo{
             position: relative;
             display: flex;
             justify-content: flex-end;
             top:-290px;
             right:60px;
         }
-        #vidCall_img{
+        #videoCall_logo{
             position: relative;
             display: flex;
             justify-content: flex-end;
