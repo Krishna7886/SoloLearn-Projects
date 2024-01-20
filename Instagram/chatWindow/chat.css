@@ -54,3 +54,39 @@ body{
             position: relative;
             top: -450px;
         }
+        #cam{
+            background-color: #0066cc;
+            width: 40px;
+            height: max-content;
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            right:-8px;
+            top:-10px;
+        }
+        #messageSender{
+            position: absolute;
+            display: flex;
+            background-color: #15292a;
+            height: 50px;
+            width: 100%;
+            border-radius: 30px;
+            left: 0px;
+            bottom: 10px;
+            
+        }
+        #msg{
+            border: none;
+            background-color: transparent;
+            position: relative;
+            right: -15px;
+            font-size: 17px;
+            
+        }
+        #mic{
+            position: absolute;
+            display: grid;
+            justify-content: right;
+            
+        }
