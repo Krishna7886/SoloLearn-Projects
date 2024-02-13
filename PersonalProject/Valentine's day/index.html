@@ -24,12 +24,26 @@
         #head{
             text-align: center;
         }
+        pic1{
+            border-radius:20px;
+        }
     </style>
 </head>
 <body>
     <div>
         <h1 id="head">Soundarya</h1>
         <video src="your-story.mp4" controls  id="video"></video>
+        <video src="Design.mp4" id="pic1"></video>
     </div>
+    <script>
+        var design = document.getElementById("pic1");
+        design.addEventListener('mouseenter',() => {
+            design.play();
+        })
+        design.addEventListener('mouseenter',() => {
+            design.pause();
+            design.currentTime = 0;
+        })
+    </script>
 </body>
 </html>
