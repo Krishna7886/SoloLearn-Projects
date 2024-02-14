@@ -48,14 +48,18 @@
         <video src="Designer (4).mp4" controls id="pic1"></video><br />
         <video src="Designer.mp4" controls id="pic1"></video><br />
         <img src="YouAndMe.png" id="video"></video><br />
+        <ausio src="Sooreede.mp3" id="aud"></ausio>
     </div>
     <script>
         var design = document.getElementById("pic1");
+        var aud = document.getElementById("aud");
         design.addEventListener('mouseenter',() => {
             design.play();
+            aud.play();
         })
         design.addEventListener('mouseenter',() => {
             design.pause();
+            aud.pause();
             design.currentTime = 0;
         })
     </script>
