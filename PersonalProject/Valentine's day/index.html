@@ -42,17 +42,19 @@
         <video src="your-story.mp4" controls  id="video"></video>
         <br /><br />
         <video src="Design.mp4" controls id="pic1"></video><br />
-        <video src="Designer (1).mp4" controls id="pic1"></video><br />
+        <video src="Designer (1).mp4" controls id="pic2"></video><br />
         <video src="Designer (2).mp4" controls id="pic1"></video><br />
         <video src="Designer (3).mp4" controls id="pic1"></video><br />
         <video src="Designer (4).mp4" controls id="pic1"></video><br />
         <video src="Designer.mp4" controls id="pic1"></video><br />
         <img src="YouAndMe.png" id="video"></video><br />
-        <ausio src="Sooreede.mp3" id="aud"></ausio>
-    </div>
+        <audio src="Sooreede.mp3" id="aud"></audio>
+       <audio src="[iSongs.info] 02 - Bujji.mp3" id="aud2" controls></audio>   </div>
     <script>
         var design = document.getElementById("pic1");
+        var design2 = document.getElementById("pic1");
         var aud = document.getElementById("aud");
+        var aud2 = document.getElementById("aud2");
         design.addEventListener('mouseenter',() => {
             design.play();
             aud.play();
@@ -60,6 +62,16 @@
         design.addEventListener('mouseenter',() => {
             design.pause();
             aud.pause();
+            design.currentTime = 0;
+        })
+
+        design2.addEventListener('mouseenter',() => {
+            design2.play();
+            aud2.play();
+        })
+        design2.addEventListener('mouseenter',() => {
+            design2.pause();
+            aud2.pause();
             design.currentTime = 0;
         })
     </script>
