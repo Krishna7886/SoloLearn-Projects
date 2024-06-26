@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #main{
+            background-color: blue;
+            height:500px;
+            width:500px;
+            margin: auto;
+        }
+        #big{
+            height:50px;
+            width:20px;
+            border-radius: 90px;
+            background-color: yellow;
+            position: relative;
+            margin: auto;
+            top:50%;
+            animation: anmi 5s infinite;
+        }
+        #small{
+            height:150px;
+            width:10px;
+            border-radius: 90px;
+            background-color: yellow;
+            position: relative;
+            margin: auto;
+        }
+        #s1{
+            position: fixed;
+            top:65px;
+            left: 50%;
+            margin: auto;
+            
+        }
+        #s2{
+            position: fixed;
+            rotate: 180deg;
+            top: 325px;
+            left: 50%;
+        }
+        #s3{
+            position: fixed;
+            rotate: 90deg;
+            left:350px;
+            top:120px;
+        }
+        #s4{
+            rotate: -90deg;
+            position: fixed;
+            top:70px;
+            left:150px;
+        }
+        @keyframes anmi{
+            0%{
+                position: fixed;
+                height:100px;
+            }
+            50%{
+                position: fixed;
+                height: 50px;
+            }
+            100%{
+                position: fixed;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="s1">
+            <div id="big">
+                <div id="small"></div>
+            </div>
+        </div>
+        <div id="s2">
+            <div id="big">
+                <div id="small"></div>
+            </div>
+        </div>
+        <div id="s3">
+            <div id="big">
+                <div id="small"></div>
+            </div>
+        </div>
+        <div id="s4">
+            <div id="big">
+                <div id="small"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
