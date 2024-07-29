@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" type="text/css"/>
+    <style>
+        #board{
+    text-align: center;
+    vertical-align: middle;
+    width:640px;
+}
+body{
+    text-align: center;
+    vertical-align: middle;
+  
+}
+.r1,.r2,.r3,.r4,.r5,.r6,.r7,.r8{
+    float: left;
+    height:80px;
+    width: 80px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgb(123, 195,66);
+    font-size: 70px;
+  
+}
+#board{
+    border: 10px solid black;
+    height: 640px;
+    width:640px;
+}
+.r1:hover,.r2:hover,.r3:hover,.r4:hover,.r5:hover,.r6:hover,.r7:hover,.r8:hover{
+    
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 83px;
+   /* background-color: blue; */
+    border-radius: 5px;
+    /*background-color: red;*/
+}
+    </style>
+</head>
+<body>
+    <div id="board">
+        <div id="r1">
+            <div style="">
+                <div id="c1" class="r1">&#9820;</div>
+                <div id="c2" class="r1">&#9822;</div>
+                <div id="c3" class="r1">&#9821;</div>
+                <div id="c4" class="r1">&#9819;</div>
+                <div id="c5" class="r1">&#9818;</div>
+                <div id="c6" class="r1">&#9821;</div>
+                <div id="c7" class="r1">&#9822;</div>
+                <div id="c8" class="r1">&#9820;</div>
+            </div>
+        </div>
+        <div id="r2">
+            <div style="">
+                <div id="c1" class="r2">&#9823;</div>
+                <div id="c2" class="r2">&#9823;</div>
+                <div id="c3" class="r2">&#9823;</div>
+                <div id="c4" class="r2">&#9823;</div>
+                <div id="c5" class="r2">&#9823;</div>
+                <div id="c6" class="r2">&#9823;</div>
+                <div id="c7" class="r2">&#9823;</div>
+                <div id="c8" class="r2">&#9823;</div>
+            </div>
+        </div>
+        <div id="r3">
+            <div style="">
+                <div id="c1" class="r3"></div>
+                <div id="c2" class="r3"></div>
+                <div id="c3" class="r3"></div>
+                <div id="c4" class="r3"></div>
+                <div id="c5" class="r3"></div>
+                <div id="c6" class="r3"></div>
+                <div id="c7" class="r3"></div>
+                <div id="c8" class="r3"></div>
+            </div>
+        </div>
+        <div id="r4">
+            <div style="">
+                <div id="c1" class="r4"></div>
+                <div id="c2" class="r4"></div>
+                <div id="c3" class="r4"></div>
+                <div id="c4" class="r4"></div>
+                <div id="c5" class="r4"></div>
+                <div id="c6" class="r4"></div>
+                <div id="c7" class="r4"></div>
+                <div id="c8" class="r4"></div>
+            </div>
+        </div>
+        <div id="r5">
+            <div style="">
+                <div id="c1" class="r5"></div>
+                <div id="c2" class="r5"></div>
+                <div id="c3" class="r5"></div>
+                <div id="c4" class="r5"></div>
+                <div id="c5" class="r5"></div>
+                <div id="c6" class="r5"></div>
+                <div id="c7" class="r5"></div>
+                <div id="c8" class="r5"></div>
+            </div>
+        </div>
+        <div id="r6">
+            <div style="">
+                <div id="c1" class="r6"></div>
+                <div id="c2" class="r6"></div>
+                <div id="c3" class="r6"></div>
+                <div id="c4" class="r6"></div>
+                <div id="c5" class="r6"></div>
+                <div id="c6" class="r6"></div>
+                <div id="c7" class="r6"></div>
+                <div id="c8" class="r6"></div>
+            </div>
+        </div>
+        <div id="r7">
+            <div style="">
+                <div id="c1" class="r7">&#9817;</div>
+                <div id="c2" class="r7">&#9817;</div>
+                <div id="c3" class="r7">&#9817;</div>
+                <div id="c4" class="r7">&#9817;</div>
+                <div id="c5" class="r7">&#9817;</div>
+                <div id="c6" class="r7">&#9817;</div>
+                <div id="c7" class="r7">&#9817;</div>
+                <div id="c8" class="r7">&#9817;</div>
+            </div>
+        </div>
+        <div id="r8">
+            <div style="">
+                <div id="c1" class="r8">&#9814;</div>
+                <div id="c2" class="r8">&#9816;</div>
+                <div id="c3" class="r8">&#9815;</div>
+                <div id="c4" class="r8">&#9813;</div>
+                <div id="c5" class="r8">&#9812;</div>
+                <div id="c6" class="r8">&#9815;</div>
+                <div id="c7" class="r8">&#9816;</div>
+                <div id="c8" class="r8">&#9814;</div>
+            </div>
+        </div>
+    </div>
+    <h1></h1>
+    <script >
+        var box1 = [];
+        var s1 = document.querySelectorAll("#c1");
+        for(var i=0;i<s1.length;i++){
+                box1[i] = (s1[i]);
+            }
+        var box2 = [];
+        var s2 = document.querySelectorAll("#c2");
+        for(var i=0;i<s2.length;i++){
+                box2[i] = (s2[i]);
+            }
+        var box3 = [];
+        var s3 = document.querySelectorAll("#c3");
+        for(var i=0;i<s3.length;i++){
+                box3[i] = (s3[i]);
+            }
+        var box4 = [];
+        var s4 = document.querySelectorAll("#c4");
+        for(var i=0;i<s4.length;i++){
+                box4[i] = (s4[i]);
+            }
+        var box5 = [];
+        var s5 = document.querySelectorAll("#c5");
+            for(var i=0;i<s5.length;i++){
+                    box5[i] = (s5[i]);
+                }
+        var box6 = [];
+        var s6 = document.querySelectorAll("#c6");
+            for(var i=0;i<s6.length;i++){
+                    box6[i] = (s6[i]);
+                }
+        var box7 = [];
+        var s7 = document.querySelectorAll("#c7");
+            for(var i=0;i<s7.length;i++){
+                    box7[i] = (s7[i]);
+                }
+        var box8 = [];
+        var s8 = document.querySelectorAll("#c8");
+            for(var i=0;i<s8.length;i++){
+                    box8[i] = (s8[i]);
+                }
+        var box = [box1,box2,box3,box4,box5,box6,box7,box8];
+        for(var i=0;i<8;i++){
+            for(var j=0;j<8;j++){
+                if(i%2 == 0 && j%2 == 0){
+                    box[i][j].style.backgroundColor="#ffffc0"
+                }
+                if(i%2 == 1 && j%2 == 1){
+                    box[i][j].style.backgroundColor="#ffffc0"
+                }
+            }
+        }
+for(let i=0;i<8;i++){
+    for(let j=0;j<8;j++){
+            box[i][j].addEventListener("mouseover",function(){
+                box[i][j].style.backgroundColor = "red"
+                if(box[i][j].innerHTML != ""){
+                    //alert(box[i][j].innerHTML)
+                }
+            })
+            box[i][j].addEventListener("mouseleave",function(){
+                if(i%2 == 0 && j%2 == 0){
+                    box[i][j].style.backgroundColor="#ffffc0"
+                }
+                if(i%2 == 1 && j%2 == 1){
+                    box[i][j].style.backgroundColor="#ffffc0"
+                }
+                if(i%2 == 0 && j%2 == 1){
+                    box[i][j].style.backgroundColor = "rgb(123, 195,66)"
+                }
+                if(i%2 == 1 && j%2 == 0){
+                    box[i][j].style.backgroundColor = "rgb(123, 195,66)"
+                }
+            })  
+    }
+}
+let copy = ""
+for(let i=0;i<8;i++){
+    for(let j=0;j<8;j++){
+            box[i][j].addEventListener("click",function(){
+                box[i][j].style.backgroundColor = "yellow"
+                copy = box[i][j].innerHTML;
+            })
+    }
+}
+    </script>
+</body>
+</html>
