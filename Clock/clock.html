@@ -89,9 +89,7 @@
             var hrs = time.getHours()+min/60;
             h1.style.rotate = (((sec/60)*360))+"deg"
             h2.style.rotate = (min*6+(sec/ 60) * 6)+"deg"
-            h3.style.rotate = ((hrs% 12) * 30 + (min / 60) * 30)+"deg"
-            //console.log(time.getMilliseconds())
-            p.innerHTML = sec;
+            h3.style.rotate = ((hrs% 12) * 30 + (min / 60) * 30)+"deg";
         },1);
     </script>
 </body>
