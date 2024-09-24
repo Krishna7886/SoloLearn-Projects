@@ -1,1 +1,98 @@
-<h1>Clock</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #h1{
+            height:130px; 
+            background-color: red;
+            width: 5px;
+            align-items: center;
+            transform-origin: 2.5px 100px ;
+            position:relative;
+            font-size: smaller;
+            z-index: 2;
+            top:170px
+        }
+
+        #h2{
+            height: 100px;
+            width: 8px;
+            background-color: rgb(3, 243, 75);
+            margin-bottom: -0px;
+            transform-origin: 5px 100px ;
+            position:relative;
+            left: 0px;
+            top:25px;
+            font-size: smaller;
+            z-index: 1;
+        }
+        #h3{
+            height: 70px;
+            width: 10px;
+            background-color: rgb(47, 0, 255);
+            margin-bottom: -0px;
+            transform-origin: 5px 70px ;
+            position:relative;
+            top:-49px;
+            font-size: smaller;
+            z-index: 0;
+        }
+        .container{
+            align-content:center;
+            align-items: center;
+            margin-left: 50%;
+            margin-top: 0%;
+        }
+        #img{
+            height: 300px;
+            position: relative;
+            top:-200px;
+            left:-146px;
+            z-index: -1;
+        }
+        #dot{
+            height:20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            top: -384px;
+            left:-6px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<div class="container">
+    <h1 id="h1"></h1>
+    <h1 id="h2"></h1>
+    <h1 id="h3"></h1>
+    <img id="img" src="Clock.svg"/>
+    <h1 id="dot"></h1>
+    <p id="p"></p>
+</div>
+<body>
+    <script>
+        var h1 = document.getElementById("h1")
+        var h2 = document.getElementById("h2")
+        var h3 = document.getElementById("h3")
+        var p = document.getElementById("p")
+        //var p = document.getElementById("p")
+        //var refresh = () => 
+        
+        setInterval(function(){
+            var time = new Date();
+            var sec = time.getSeconds()+time.getMilliseconds()/1000;
+            var min = time.getMinutes()+sec/60;
+            var hrs = time.getHours()+min/60;
+            h1.style.rotate = (((sec/60)*360))+"deg"
+            h2.style.rotate = (min*6+(sec/ 60) * 6)+"deg"
+            h3.style.rotate = ((hrs% 12) * 30 + (min / 60) * 30)+"deg"
+            //console.log(time.getMilliseconds())
+            p.innerHTML = sec;
+        },1);
+    </script>
+</body>
+</html>
