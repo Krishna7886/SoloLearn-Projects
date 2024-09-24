@@ -6,16 +6,16 @@
     <title>Document</title>
     <style>
         #h1{
-            height:130px; 
+            height:150px; 
             background-color: red;
             width: 5px;
             align-items: center;
-            transform-origin: 2.5px 100px ;
+            transform-origin: 2px 120px ;
             position:relative;
             font-size: smaller;
             z-index: 2;
             top:170px;
-            border-tadius:10px;
+            border-radius: 10px;
         }
 
         #h2{
@@ -26,10 +26,10 @@
             transform-origin: 5px 100px ;
             position:relative;
             left: 0px;
-            top:25px;
+            top:30px;
             font-size: smaller;
+            border-radius: 10px;
             z-index: 1;
-            border-tadius:10px;
         }
         #h3{
             height: 70px;
@@ -40,8 +40,8 @@
             position:relative;
             top:-49px;
             font-size: smaller;
+            border-radius: 10px;
             z-index: 0;
-            border-tadius:10px;
         }
         .container{
             align-content:center;
@@ -62,7 +62,7 @@
             border-radius: 50%;
             background-color: black;
             position: absolute;
-            top: 254px;
+            top: 274px;
             left:50%;
             z-index: 3;
         }
@@ -91,8 +91,8 @@
             var min = time.getMinutes()+sec/60;
             var hrs = time.getHours()+min/60;
             h1.style.rotate = (((sec/60)*360))+"deg"
-            h2.style.rotate = (min*6+(sec/ 60) * 6)+"deg"
-            h3.style.rotate = ((hrs% 12) * 30 + (min / 60) * 30)+"deg";
+            h2.style.rotate = (min*6+(sec/ 60))+"deg"
+            h3.style.rotate = ((hrs% 12) * 30 + (min / 60) * 30)+"deg"
         },1);
     </script>
 </body>
