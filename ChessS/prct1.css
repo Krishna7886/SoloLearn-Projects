@@ -11,62 +11,14 @@ body{
     align-content: center;
     position: absolute;
     text-align: center;
-}
-.box1,.box2,.box3,.box4,.box5{
-    border: 1px solid;
-}
-
-.box1{
-    display: block;
-    height: 20px;
-    width: 50px;
-}
-
-.box2{
-    display: inline;
-    margin: 10px;
-}
-
-.box3{
-    display: inline-block;
-    height: 50px;
-    width: 100px;
-    text-align: center;
-    align-content: center;
-    margin: 0px;
-}
-.box4,.box5{
-    height:100;
-
-}
-#flex{
-    display:flex;
+    border: 5px solid;
     
 }
-#grid{
-    display: grid;
-    grid-template-columns: repeat(6,1fr) ;
-    grid-template-rows: repeat(6,1fr);
-    gap: 0px;
-    width:400px;
-    height: 400px;
-    text-align: center;
-       
-}
-.box5{
-    align-content: center;
-}
 
-#cont{
-    border: 1px solid;
-    height: max-content;
-    width: max-content;
-    align-content: center;
-}
 .box{
     height: 70px;
     width: 70px;
-    border: 1px solid;
+    border: 0px solid;
     display: block;
     text-align: center;
     align-items: center;
