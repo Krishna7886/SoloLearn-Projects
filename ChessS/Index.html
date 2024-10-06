@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prct1.css"></link>
+</head>
+<body>
+    <div id="cont">
+        <div id="r1">
+            <div id="b1" class="box">&#9820;</div>
+            <div id="b2" class="box">&#9822;</div>
+            <div id="b3" class="box">&#9821;</div>
+            <div id="b4" class="box">&#9819;</div>
+            <div id="b5" class="box">&#9818;</div>
+            <div id="b6" class="box">&#9821;</div>
+            <div id="b7" class="box">&#9822;</div>
+            <div id="b8" class="box">&#9820;</div>
+        </div>
+        <div id="r2">
+            <div id="b1" class="box">&#9823;</div>
+            <div id="b2" class="box">&#9823;</div>
+            <div id="b3" class="box">&#9823;</div>
+            <div id="b4" class="box">&#9823;</div>
+            <div id="b5" class="box">&#9823;</div>
+            <div id="b6" class="box">&#9823;</div>
+            <div id="b7" class="box">&#9823;</div>
+            <div id="b8" class="box">&#9823;</div>
+        </div>
+        <div id="r3">
+            <div id="b1" class="box"></div>
+            <div id="b2" class="box"></div>
+            <div id="b3" class="box"></div>
+            <div id="b4" class="box"></div>
+            <div id="b5" class="box"></div>
+            <div id="b6" class="box"></div>
+            <div id="b7" class="box"></div>
+            <div id="b8" class="box"></div>
+        </div>
+        <div id="r4">
+            <div id="b1" class="box"></div>
+            <div id="b2" class="box"></div>
+            <div id="b3" class="box"></div>
+            <div id="b4" class="box"></div>
+            <div id="b5" class="box"></div>
+            <div id="b6" class="box"></div>
+            <div id="b7" class="box"></div>
+            <div id="b8" class="box"></div>
+        </div>
+        <div id="r5">
+            <div id="b1" class="box"></div>
+            <div id="b2" class="box"></div>
+            <div id="b3" class="box"></div>
+            <div id="b4" class="box"></div>
+            <div id="b5" class="box"></div>
+            <div id="b6" class="box"></div>
+            <div id="b7" class="box"></div>
+            <div id="b8" class="box"></div>
+        </div>
+        <div id="r6">
+            <div id="b1" class="box"></div>
+            <div id="b2" class="box"></div>
+            <div id="b3" class="box"></div>
+            <div id="b4" class="box"></div>
+            <div id="b5" class="box"></div>
+            <div id="b6" class="box"></div>
+            <div id="b7" class="box"></div>
+            <div id="b8" class="box"></div>
+        </div>
+        <div id="r7">
+            <div id="b1" class="box">&#9817;</div>
+            <div id="b2" class="box">&#9817;</div>
+            <div id="b3" class="box">&#9817;</div>
+            <div id="b4" class="box">&#9817;</div>
+            <div id="b5" class="box">&#9817;</div>
+            <div id="b6" class="box">&#9817;</div>
+            <div id="b7" class="box">&#9817;</div>
+            <div id="b8" class="box">&#9817;</div>
+        </div>
+        <div id="r8">
+            <div id="b1" class="box">&#9814;</div>
+            <div id="b2" class="box">&#9816;</div>
+            <div id="b3" class="box">&#9815;</div>
+            <div id="b4" class="box">&#9813;</div>
+            <div id="b5" class="box">&#9812;</div>
+            <div id="b6" class="box">&#9815;</div>
+            <div id="b7" class="box">&#9816;</div>
+            <div id="b8" class="box">&#9814;</div>
+        </div>
+    </div>
+    <script >
+        
+var b1Ary = Array()
+document.querySelectorAll("#b1").forEach(a => {
+    b1Ary.push(a)
+})
+
+var b2Ary = Array()
+document.querySelectorAll("#b2").forEach(a => {
+    b2Ary.push(a)
+})
+
+var b3Ary = Array()
+document.querySelectorAll("#b3").forEach(a => {
+    b3Ary.push(a)
+})
+
+var b4Ary = Array()
+document.querySelectorAll("#b4").forEach(a => {
+    b4Ary.push(a)
+})
+
+var b5Ary = Array()
+document.querySelectorAll("#b5").forEach(a => {
+    b5Ary.push(a)
+})
+
+var b6Ary = Array()
+document.querySelectorAll("#b6").forEach(a => {
+    b6Ary.push(a)
+})
+
+var b7Ary = Array()
+document.querySelectorAll("#b7").forEach(a => {
+    b7Ary.push(a)
+})
+
+var b8Ary = Array()
+document.querySelectorAll("#b8").forEach(a => {
+    b8Ary.push(a)
+})
+
+var box = Array(b1Ary,b2Ary,b3Ary,b4Ary,b5Ary,b6Ary,b7Ary,b8Ary)
+
+for(var i=0;i<8;i++){
+    for(var j=0;j<8;j++){
+        if(i%2==0 && j%2 == 0){
+            box[i][j].style.backgroundColor = "rgba(0,255,0,.6)" 
+        }
+        if(i%2 != 0 && j%2 !=0){
+            box[i][j].style.backgroundColor = "rgba(0,255,0,.6)" 
+        }
+    }
+}
+
+
+    </script>
+</body>
+</html>
